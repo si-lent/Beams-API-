@@ -24,5 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^auth/', include('djoser.urls')),
     url(r'^auth/', include('djoser.urls.jwt')),
-    url(r'^account/', include('accounts.urls'))
+    url(r'^account/', include('accounts.urls')),
+    url(r'^nodes/', include('nodesData.urls'))
 ]
